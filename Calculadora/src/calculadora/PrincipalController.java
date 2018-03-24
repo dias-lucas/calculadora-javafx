@@ -41,6 +41,23 @@ public class PrincipalController implements Initializable {
         result = (num1 - num2);
         txtresultado.setText(result.toString());
     }
+    @FXML 
+    private void dividir(ActionEvent ae) {
+        Double num1 = Double.parseDouble(txtnum1.getText());
+        Double num2 = Double.parseDouble(txtnum1.getText());
+        Double result;
+        result = (num1 / num2);
+        txtresultado.setText(result.toString());
+    }
+    @FXML
+    private void multiplicar(ActionEvent ae) {
+        Double num1 = Double.parseDouble(txtnum1.getText());
+        Double num2 = Double.parseDouble(txtnum2.getText());
+        Double result;
+        result = (num1 * num2);
+        txtresultado.setText(result.toString());
+                
+    }
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
